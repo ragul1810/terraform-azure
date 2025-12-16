@@ -1,5 +1,5 @@
 module "vm" {
-  source              = "../VMTERRAFORM/Modules"
+  source              = "../terraform-azure/Modules"
   resource_group_name = "rg-prod"
   location            = "eastus"
   vm_name             = "prod-vm01"
