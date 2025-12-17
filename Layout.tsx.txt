@@ -1,0 +1,25 @@
+import './globals.css'
+
+export const metadata = {
+  title: 'My Resort',
+  description: 'Static resort website'
+}
+
+export default function RootLayout({ children }: { children: React.ReactNode }) {
+  return (
+    <html lang="en">
+      <body>
+        <header className="container" style={{display:'flex',justifyContent:'space-between'}}>
+          <a href="/">My Resort</a>
+          <nav style={{display:'flex',gap:'1rem'}}>
+            <a href="/">Home</a>
+            <a href="/contact">Contact</a>
+            <a href="/rooms/sample-room">Room</a>
+          </nav>
+        </header>
+        <main>{children}</main>
+        <footer className="container">© {new Date().getFullYear()} My Resort</footer>
+      </body>
+    </html>
+  )
+}

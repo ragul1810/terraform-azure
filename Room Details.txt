@@ -1,0 +1,17 @@
+export default function RoomDetail() {
+  return (
+    <div className="container">
+      <img src="/rooms/room1.jpg" alt="Heritage Cottage" style={{width:'100%',height:'300px',objectFit:'cover'}} />
+      <h1>Heritage Cottage</h1>
+      <p>A cozy cottage with vintage charm and modern comfort.</p>
+      <p>Capacity: 3 guests</p>
+      <p>Price: ₹6500 per night</p>
+      <p>Amenities:</p>
+      <ul>
+        <li><img src="/icons/wifi.png" alt="WiFi" width="24" /> WiFi</li>
+        <li><img src="/icons/ac.png" alt="AC" width="24" /> Air Conditioning</li>
+        <li><img src="/icons/breakfast.png" alt="Breakfast" width="24" /> Breakfast included</li>
+      </ul>
+    </div>
+  )
+}

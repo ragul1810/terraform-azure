@@ -1,0 +1,18 @@
+export default function Home() {
+  return (
+    <div>
+      <section style={{backgroundImage:"url('/hero.jpg')",height:"60vh",display:"flex",alignItems:"center",justifyContent:"center"}}>
+        <div style={{background:"rgba(0,0,0,0.5)",padding:"1rem",borderRadius:"8px",color:"white",textAlign:"center"}}>
+          <h1>Escape to nature</h1>
+          <p>Serene stays, authentic experiences.</p>
+          <a className="btn" href="/rooms/sample-room">View a room</a>
+        </div>
+      </section>
+
+      <section className="container">
+        <h2>Why stay with us</h2>
+        <p>Quiet surroundings, local cuisine, and warm hospitality.</p>
+      </section>
+    </div>
+  )
+}
